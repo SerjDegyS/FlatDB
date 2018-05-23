@@ -13,7 +13,7 @@ public class Main {
 
         try (Connection con = daoFactory.getConnection()) {
             FlatDao flatDao = daoFactory.getFlatDao(con);
-            List<Flat> list1 = flatDao.getFlatByDistrictAndPrice("Дарницький", 10000, 20000);
+            List<Flat> list1 = flatDao.getFlatByDistrictAndPrice("Подільський", 10000, 20000);
             System.out.println(list1.toString());
 
             List<Flat> list2 = flatDao.getFlatByRoomQuantity(2);
